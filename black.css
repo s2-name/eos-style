@@ -1,0 +1,653 @@
+body{
+ margin: 0px;
+ background-color: #000;
+}
+pre, textarea{
+   font-family: serif;
+}
+pre p{
+   margin: 0px;
+}
+
+sfql-field-gap, sf-gen-var{
+   margin: 0 3px;
+   padding: 0 3px;
+   background: #DDD;
+   border: solid 1px;
+   white-space: nowrap;
+}
+
+
+fmath, math{
+   text-align:center;
+   display:block;
+}
+
+label fmath, label math
+  ,li fmath, li math 
+  ,.frmt-answer fmath,.frmt-answer math 
+{
+   text-align:left;
+   display:inline-block;
+}
+
+
+.bt-insert-char
+{
+   width:40px;
+   height:30px;
+   float:left;
+   margin:2px;
+   padding:0px;
+}
+
+.login-header{
+  background: #00446d;
+  min-height: 80px;
+  color: white; 
+  
+}
+.login-header img{
+  height: 80px;
+  margin-right: 20px;
+  float: left; 
+}
+
+#bg{
+  display: none;
+}
+
+form{
+  color: #59BFFF;
+  margin: 0 5%;
+}
+
+.user-panel {
+  /*position: absolute;*/
+  top: 0px;
+  right: 5px;
+  float: right;
+  color: white;  
+}
+
+.menu{
+  padding: 10px;
+  color: white;
+  /* border-bottom-left-radius: 5%; */
+  border-bottom-radius: 0;
+  /* border-bottom-right-radius: 5%; */
+}
+
+.menu.noprint.menu-color-std {}
+
+.menu-color-std{
+  background: #2187C8;
+  /*width: 100vw;*/
+}
+.menu-color-admin{
+  background: #006d0f;
+}
+.menu-color-admin-incognito{
+  background: #41006d;
+}
+
+
+
+.menu a{
+  text-decoration: none;  
+  white-space: nowrap;
+  padding: 6px 16px;
+  color: white; 
+}
+
+.menu-item {
+  margin: 6px 0px;  
+}
+
+.menu-item a:hover{
+  background-color: #87cefa;
+  text-shadow: rgb(150, 150, 150) 1px 2px 1px;
+  padding: 6px 16px; 
+}
+#current-menu-item{
+  background-color: #6865C8;
+  padding: 6px 0px;
+  border-radius: 4px; 
+}
+
+/* количество непроверенных работ отображаемое в меню */
+.menu-subject-count-wait{
+	font-size: 80%;
+	color: black !important;
+	background: white;
+	margin: 2px 0px 0px 8px!important;
+	padding: 2px 8px!important;
+	border-radius: 4px;
+	text-shadow: none;
+}
+
+/* количество непроверенных работ */
+.subject-count-wait{
+    position: absolute;
+    background: #00446d;	
+	font-size: 10pt;
+	color: white;	
+	border-radius: 4px;	
+	margin-top: -6px;
+    padding: 0px 2px;    
+}
+
+
+/*навигационный путь*/
+    .current-place a{
+      color: #CAFFFF;
+      text-decoration:underline;
+      font-size: 16px;
+    }
+    .current-place a:hover{
+      text-decoration:none;
+    }
+
+    
+/*положение раздела в курсе*/
+.position-panel  {
+  margin: 0 0 2% 0;
+}
+.item-position-panel  {
+   display: inline-block;
+   padding: 0px 6px;
+   margin: 1px 2px;
+   border-color: #00446d;
+   border-style: solid;  
+   border-radius: 4px;
+}
+
+/*раздел оценок */
+    /* контейнер для выбора критерия фальтрации*/
+    .estimate-select{
+      list-style-type:  disc;
+    }
+
+    /*элемент выбора критерия фильтрации */
+    .estimate-select-item a{
+      color:black;
+      text-decoration:none;
+    }
+
+    /*элемент для снятия фильтра */
+    .estimate-select-none a{
+      color:#2B5b7b;
+      text-decoration:none; 
+    }
+    
+    /* подсветка правильных и неправильных вопросов в разделе оценок */
+    .good_answer{
+      color:green;
+    }
+    .bad_answer{
+      color:red;
+    }
+
+/* элемент перечисления предназначенный для входа внутрь*/
+.open-item a{
+  color: #59BFFF;
+  text-decoration:none; 
+}
+.open-item{
+  color: #59BFFF;
+}
+
+
+/* тоже что и open-item, только в базе он помечен как удаленный*/
+/*не всегда удаленный элемент имеет ссылку внутри*/
+.deleted-item {
+  color:red;
+}
+.deleted-item a{
+  color:red;
+  text-decoration:none;  
+}
+
+.cell-align-center {
+  text-align:center;
+}
+
+.journal-cell{
+  text-align: right; 
+  padding-right:3px;  
+  height: 25px;
+  line-height: 25px;
+  border: 1px solid;
+  vertical-align: middle;
+  overflow-x:hidden; 
+}
+
+.journal-fio{
+  height: 25px;
+  line-height: 25px;
+  border: 1px solid;
+  vertical-align: middle;
+  overflow-x:hidden;
+  padding-left:3px;
+}
+.stat-answer {
+  color: grey;
+}
+
+.mark-as-deleted{
+  color: grey;
+  background: white;
+  margin: 0px 5px;
+  padding: 3px 5px;  
+  border-radius: 4px
+}
+.mark-access, .mark-department{
+  color:white;
+  background: grey;
+  padding: 3px 5px;  
+  border-radius: 4px;
+}
+.mark-item{
+  margin: 0px 5px 0px 0px;
+  padding: 3px 5px;  
+  border-radius: 4px;
+}
+.mark-online{
+  color:white;
+  background: green;    
+  padding: 0px 8px;  
+  border-radius: 8px;
+}
+
+/* История входов*/
+.login-success{
+   color:green;
+}
+.login-fail{
+   color:red;
+}
+
+/*контейнер с вопросом */
+.question {
+  padding: 10px 0;
+  display: block; 
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old Firefox */
+        -ms-user-select: none; /* IE */
+         -o-user-select: none;
+            user-select: none; /* new Chrome, Opera and Firefox */
+}
+
+/* текст вопроса с выравниванием */
+.p-indent-justify p{
+  text-align: justify;
+  text-indent: 2em;
+}
+/* контейнер с номером вопроса */
+.question-number {
+  padding: 0px 0;
+  display: block;
+  background:grey;
+  padding: 10px 10px;
+  color:white;
+  font-weight: bold;
+}
+
+/* ячейка для вписывания числа, которое ввел пользователь в вопросе на соответствие*/
+.question-match-box{
+   border:  1px solid black;
+   padding: 0px 5px;
+   font-family: monospace;
+}
+
+/* элементы нумерованного списка в вопросе на соответствие*/
+.question-match-items li{
+  cursor:pointer;
+  text-decoration:underline;
+}
+.question-match-items li:hover{
+  background:#DDDDDD;
+} 
+
+/* подсказка при ответе на вопрос*/
+.question-answer-help {
+  color: grey; 
+}
+
+/* подсказка по работе с системой
+без отступа сверху
+*/
+.help-message-for-creator-top{
+  color: grey;  
+  margin-bottom:16px;  
+}
+/* без отступа снизу
+*/
+.help-message-for-creator-bottom{
+  color: grey;  
+  margin-top:16px;  
+}
+
+/*заголовок на странице*/
+.section-header{
+  text-align: center;
+  font-weight: bold;
+  text-transform:uppercase;
+  color: #fff;
+  margin: 5% 0 2% 0;
+}
+.sticky-header{
+  position: static; 
+  position: sticky; 
+  position: -webkit-sticky; 
+  top:0;
+  background:white;
+}
+
+/* тело секции - здесь основное содержимое */
+.section-body{
+  color: #59BFFF;
+  width: 100%;
+  height: 100%;
+  padding: 10px; 
+  background: linear-gradient(45deg, #000, #2F2F2F, #000);
+  width: fit-content;
+  margin: 0 auto;
+  /*margin-left: 50%;*/
+  /*transform: translateX(-50%);*/
+}
+.section-body table{
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    border: 1px solid #fff;
+    /* margin-left: 50%; */
+    /* transform: translateX(-50%); */
+}
+.section-body td.section-th{
+    border: 2px solid #fff;
+}
+.section-body td{
+    border: 1px solid #fff;
+}
+.section-body p{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*заголовок ячейки таблицы с основным содержимым */
+.section-th{
+  color: #59BFFF;
+  text-align: center;
+  font-weight: bold;
+}
+.section-table-row:hover{
+  background: #2F2F2F;
+}
+
+.progress-value{
+  color: #2187C8;
+}
+
+/* элемент перечисления с таблицей внутри*/
+.item-with-table{
+   margin: 15px 0;
+}
+.item-with-table table, .item-with-table td{
+   border: none;
+}
+
+/* таблица находящаяся внутри item-with-table */
+.item-with-table-content{
+  /*box-shadow: inset 3px 3px 10px #7d8e8f; */
+  border:solid;
+  border-color:grey;
+  display: block;
+  background:white;
+}
+
+/* заглавние для элемента перечисления */
+.item-with-table-header{
+  color:white;
+  padding: 10px 10px; 
+  background: grey;  /* цвет как у .question-number */
+}
+.item-with-table-header a{
+  color:white;  
+}
+
+/*оформление форм редактирвания и создания */
+.form-item-label{
+  margin-top: 15px; 
+  font-weight: bold;
+}
+
+/* кнопка сохранить на всех формах */
+
+/*секция содержащая ссылки на файл*/
+.section-attach{
+
+}
+/*сообщение о разрешеном размере файла*/
+.file-load-msg{
+  color: grey;  
+}
+
+/* Заголовок объявляющий, что далее идут приложения к лекции */
+.section-attach-title{
+    margin-top: 5px; 
+    font-weight: bold; 
+}
+
+/*ссылка на прикрепленный файл*/
+.attach-file{   
+    margin-left: 16px; 
+}
+
+/* панель с кнопками "Продолжить" и "вернуться к содержанию" */
+/* оформление такое же как и у пунктов меню, только фон другой*/
+.jumps-panel,  .actions-panel{
+   padding: 10px 0;
+}
+
+.jumps-panel *, .actions-panel *{   
+   margin:3px;
+   color: white;
+   text-decoration: none;  
+   display: inline-block;
+   padding: 6px 16px;
+   cursor: pointer; /*для .form-btn*/   
+}
+
+.bt-font-style{   
+   padding: 6px 0px;
+   margin:3px;
+   cursor: pointer;  
+}
+.color-std{
+  background: #00446d !important;
+}
+.color-std:hover, .color-green:hover, .color-red:hover, .color-blue:hover{
+  background: grey!important;
+}
+
+.color-green{
+  background: green !important; 
+}
+.color-red{
+  background: #A52A2A  !important; 
+}
+.color-blue{
+  background: #2a84bb  !important; 
+}
+.color-active{
+  background: #6865C8  !important; 
+}
+
+/*сообщение об ошибке*/
+.error-msg, .error-msg-onlycolor{
+   color:#A52A2A;
+}
+.error-msg{
+   border:solid;
+   padding: 6px 16px;
+   margin-top: 6px;
+   display:block;  
+   background: #DDDDDD;   
+}
+
+/*объявления*/
+#session-notice{
+  border:solid;
+  color:#A52A2A;
+  padding: 6px 16px; 
+  background: #DDDDDD;
+  margin: 5px 0px
+}
+
+.access-bar{
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+}
+.access-bar-item{
+        width:10px;
+        height:10px;
+        float:left;
+        margin: 1px;
+        border: 1px solid black; 
+        margin-top: 5px; 
+        border-radius:3px;        
+}
+
+.icon-show-password{
+   width: 20px !important;
+}
+
+
+/* потом удалить, устерело */ 
+#cb_unfolding + label + div {
+    display: none; 
+}
+#cb_unfolding:checked + label + div {
+    display: block; 
+}
+/*  */ 
+
+.cb_unfolding + label + div {
+    display: none; 
+}
+.cb_unfolding:checked + label + div {
+    display: block; 
+}
+
+.cb_warn + span {
+    color: none; 
+}
+.cb_warn:checked + span {
+    color: red; 
+}
+
+#okno_modal {
+        height: 70px;
+        padding: 15px;
+        /*border: 3px solid black;*/
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        border-radius: 10px;
+        color: black;
+        margin: 10% auto auto auto;
+        background: white;        
+        opacity: 10;
+}
+
+.modal{
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 3;
+        margin: auto;
+}
+@media screen and (min-width: 420px){
+  #okno_modal {
+     width: 400px;
+   }
+}
+
+.filling {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: #DDDDDD;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        opacity: .8;
+}
+.close {
+    top:5px; 
+    right:5px;
+    padding: 2px 5px;
+    position:absolute;
+    cursor:pointer;
+    text-decoration: none; 
+}
+.close:hover {background: #e6e6ff;}
+
+#url_hisroty_box:visited{
+   display:none;
+   color:#FF0000; !important;
+}
+
+.loader-animation-box{
+   position: absolute;
+   left: 10px; 
+   bottom: 5px; 
+   width: 280px;
+   height: 20px;
+   border: 1px solid;
+   border-radius: 8px;
+   overflow: hidden;
+}
+.loader-animation{
+   position: absolute;
+   bottom: 0px; 
+   width: 50px;
+   height: 20px;
+   background: #00446d;
+   animation: move 10s infinite linear;
+}
+.flex_container > form{
+  padding: 10px;
+  background-color: #007BC8;
+}
+.scrins > img{
+  border: 1px solid #000;
+}
+@keyframes move {
+  0% {
+    left: -50px; 
+  }
+  50% { 
+    left: 280px; 
+  } 
+  100% { 
+    left: -50px; 
+  }  
+}
+@media print{
+  .noprint {
+     display: none !important;
+   }
+  .noprint *{
+     display: none !important;
+   }
+}
